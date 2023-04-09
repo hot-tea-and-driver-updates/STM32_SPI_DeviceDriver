@@ -47,15 +47,15 @@
  */
 
 
-#define DRV_FLASH_BASEADDR 			0x00000000U		/*!<explain this macro briefly here */
-#define DRV_SRAM1_BASEADDR			0x20000000U		/*!<explain this macro briefly here */
-#define DRV_SRAM2_BASEADDR			0x2001C000U		/*!<explain this macro briefly here */
-#define DRV_ROM						0x1FFF0000U		/*!<explain this macro briefly here */
+#define DRV_FLASH_BASEADDR 		0x00000000U		/*!<explain this macro briefly here */
+#define DRV_SRAM1_BASEADDR		0x20000000U		/*!<explain this macro briefly here */
+#define DRV_SRAM2_BASEADDR		0x2001C000U		/*!<explain this macro briefly here */
+#define DRV_ROM				0x1FFF0000U		/*!<explain this macro briefly here */
 #define DRV_OTP_AREA_BASEADDR		0X1FFF7800U		/*!<explain this macro briefly here */
-#define DRV_SRAM					DRV_SRAM1_BASEADDR
+#define DRV_SRAM			DRV_SRAM1_BASEADDR
 
 /*AHBx & APBx peripheral bus definitions */
-#define DRV_PERIPH_BASEADDR			0x40000000U		/*!<explain this macro briefly here */
+#define DRV_PERIPH_BASEADDR		0x40000000U		/*!<explain this macro briefly here */
 #define DRV_APB1PERIPH_BASEADDR		DRV_PERIPH_BASEADDR	/*!<explain this macro briefly here */
 #define DRV_APB2PERIPH_BASEADDR		0x40010000U		/*!<explain this macro briefly here */
 #define DRV_AHB1PERIPH_BASEADDR		0x40020000U		/*!<explain this macro briefly here */
@@ -63,84 +63,84 @@
 
 /*AHB1 Peripheral Base Addresses */
 
-#define DRV_GPIOA_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0x0000U)
-#define DRV_GPIOB_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0x0400U)
-#define DRV_GPIOC_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0x0800U)
-#define DRV_GPIOD_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0x0C00U)
-#define DRV_GPIOE_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0x1000U)
-#define DRV_GPIOF_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0x1400U)
-#define DRV_GPIOG_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0x1800U)
-#define DRV_GPIOH_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0x1C00U)
-#define DRV_GPIOI_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0x2000U)
-#define DRV_GPIOJ_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0x2400U)
-#define DRV_GPIOK_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0x2800U)
-#define DRV_CRC_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0x3000U)
-#define DRV_RCC_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0x3800U)
+#define DRV_GPIOA_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x0000U)
+#define DRV_GPIOB_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x0400U)
+#define DRV_GPIOC_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x0800U)
+#define DRV_GPIOD_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x0C00U)
+#define DRV_GPIOE_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x1000U)
+#define DRV_GPIOF_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x1400U)
+#define DRV_GPIOG_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x1800U)
+#define DRV_GPIOH_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x1C00U)
+#define DRV_GPIOI_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x2000U)
+#define DRV_GPIOJ_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x2400U)
+#define DRV_GPIOK_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x2800U)
+#define DRV_CRC_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x3000U)
+#define DRV_RCC_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x3800U)
 #define DRV_FLASHINTREG_BASEADDR	(DRV_AHB1PERIPH_BASEADDR + 0x3C00U)
 #define DRV_BKPSRAM_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x4000U)
-#define DRV_DMA1_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0x6000U)
-#define DRV_DMA2_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0x6400U)
+#define DRV_DMA1_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x6000U)
+#define DRV_DMA2_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x6400U)
 #define DRV_ETHERNET_MAC_BASEADDR	(DRV_AHB1PERIPH_BASEADDR + 0x8000U)
-#define DRV_DMA2D_BASEADDR			(DRV_AHB1PERIPH_BASEADDR + 0xB000U)
+#define DRV_DMA2D_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0xB000U)
 #define DRV_USB_OTG_HS_BASEADDR		(DRV_AHB1PERIPH_BASEADDR + 0x20000U)
 
 /*AHB2 Peripheral Base Addresses */
 #define DRV_USB_OTG_FS_BASEADDR		(DRV_AHB2PERIPH_BASEADDR + 0x0000U)
-#define DRV_DCMI_BASEADDR			(DRV_AHB2PERIPH_BASEADDR + 0x50000U)
-#define DRV_CRYP_BASEADDR			(DRV_AHB2PERIPH_BASEADDR + 0x60000U)
-#define	DRV_HASH_BASEADDR			(DRV_AHB2PERIPH_BASEADDR + 0x60400U)
-#define DRV_RNG_BASEADDR			(DRV_AHB2PERIPH_BASEADDR + 0x60800U)
+#define DRV_DCMI_BASEADDR		(DRV_AHB2PERIPH_BASEADDR + 0x50000U)
+#define DRV_CRYP_BASEADDR		(DRV_AHB2PERIPH_BASEADDR + 0x60000U)
+#define	DRV_HASH_BASEADDR		(DRV_AHB2PERIPH_BASEADDR + 0x60400U)
+#define DRV_RNG_BASEADDR		(DRV_AHB2PERIPH_BASEADDR + 0x60800U)
 
 /*APB1 Peripheral Base Addresses */
-#define DRV_TIM2_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x0000U)
-#define DRV_TIM3_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x0400U)
-#define DRV_TIM4_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x0800U)
-#define DRV_TIM5_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x0C00U)
-#define DRV_TIM6_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x1000U)
-#define DRV_TIM7_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x1400U)
-#define DRV_TIM12_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x1800U)
-#define DRV_TIM13_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x1C00U)
-#define DRV_TIM14_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x2000U)
+#define DRV_TIM2_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x0000U)
+#define DRV_TIM3_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x0400U)
+#define DRV_TIM4_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x0800U)
+#define DRV_TIM5_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x0C00U)
+#define DRV_TIM6_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x1000U)
+#define DRV_TIM7_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x1400U)
+#define DRV_TIM12_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x1800U)
+#define DRV_TIM13_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x1C00U)
+#define DRV_TIM14_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x2000U)
 #define DRV_RTC_BKP_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x2800U)
-#define DRV_WWDG_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x2C00U)
-#define DRV_IWDG_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x3000U)
+#define DRV_WWDG_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x2C00U)
+#define DRV_IWDG_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x3000U)
 #define DRV_I2S2ext_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x3400U)
-#define DRV_SPI2_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x3800U)
-#define DRV_SPI3_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x3C00U)
+#define DRV_SPI2_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x3800U)
+#define DRV_SPI3_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x3C00U)
 #define DRV_I2S3ext_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x4000U)
-#define DRV_USART2_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x4400U)
-#define DRV_USART3_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x4800U)
-#define DRV_UART4_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x4C00U)
-#define DRV_UART5_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x5000U)
-#define DRV_I2C1_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x5400U)
-#define DRV_I2C2_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x5800U)
-#define DRV_I2C3_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x5C00U)
-#define DRV_CAN1_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x6400U)
-#define DRV_CAN2_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x6800U)
-#define DRV_PWR_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x7000U)
-#define DRV_DAC_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x7400U)
-#define DRV_UART7_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x7800U)
-#define DRV_UART8_BASEADDR			(DRV_APB1PERIPH_BASEADDR + 0x7C00U)
+#define DRV_USART2_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x4400U)
+#define DRV_USART3_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x4800U)
+#define DRV_UART4_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x4C00U)
+#define DRV_UART5_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x5000U)
+#define DRV_I2C1_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x5400U)
+#define DRV_I2C2_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x5800U)
+#define DRV_I2C3_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x5C00U)
+#define DRV_CAN1_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x6400U)
+#define DRV_CAN2_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x6800U)
+#define DRV_PWR_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x7000U)
+#define DRV_DAC_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x7400U)
+#define DRV_UART7_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x7800U)
+#define DRV_UART8_BASEADDR		(DRV_APB1PERIPH_BASEADDR + 0x7C00U)
 
 /*APB2 Peripheral Base Addresses */
-#define DRV_TIM1_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x0000U)
-#define DRV_TIM8_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x0400U)
-#define DRV_USART1_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x1000U)
-#define DRV_USART6_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x1400U)
-#define DRV_ADC1_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x2000U)
-#define DRV_ADC2_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x2000U)
-#define DRV_ADC3_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x2000U)
-#define DRV_SDIO_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x2C00U)
-#define DRV_SPI1_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x3000U)
-#define DRV_SPI4_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x3400U)
-#define DRV_SYSCFG_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x3800U)
-#define DRV_EXTI_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x3C00U)
-#define DRV_TIM9_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x4000U)
-#define DRV_TIM10_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x4400U)
-#define DRV_TIM11_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x4800U)
-#define DRV_SPI5_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x5000U)
-#define DRV_SPI6_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x5400U)
-#define DRV_SAI1_BASEADDR			(DRV_APB2PERIPH_BASEADDR + 0x5800U)
+#define DRV_TIM1_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x0000U)
+#define DRV_TIM8_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x0400U)
+#define DRV_USART1_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x1000U)
+#define DRV_USART6_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x1400U)
+#define DRV_ADC1_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x2000U)
+#define DRV_ADC2_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x2000U)
+#define DRV_ADC3_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x2000U)
+#define DRV_SDIO_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x2C00U)
+#define DRV_SPI1_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x3000U)
+#define DRV_SPI4_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x3400U)
+#define DRV_SYSCFG_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x3800U)
+#define DRV_EXTI_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x3C00U)
+#define DRV_TIM9_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x4000U)
+#define DRV_TIM10_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x4400U)
+#define DRV_TIM11_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x4800U)
+#define DRV_SPI5_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x5000U)
+#define DRV_SPI6_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x5400U)
+#define DRV_SAI1_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x5800U)
 #define DRV_LCD_TFT_BASEADDR		(DRV_APB2PERIPH_BASEADDR + 0x6800U)
 
 /* Note: registers of a peripheral are specific to MCU
@@ -156,15 +156,15 @@
  */
 
 typedef struct{
-	volatile uint32_t MODER;					/*GPIO port mode register  							Address Offset: 0x00 */
-	volatile uint32_t OTYPER;					/*GPIO port output type register  					Address Offset: 0x04 */
-	volatile uint32_t OSPEEDR;					/*GPIO port output speed register  					Address Offset: 0x08 */
-	volatile uint32_t PUPDR;					/*GPIO port pull-up/pull-down register  			Address Offset: 0x0C */
-	volatile uint32_t IDR;						/*GPIO port input data register  					Address Offset: 0x10 */
-	volatile uint32_t ODR;						/*GPIO port output data register 					Address Offset: 0x14 */
-	volatile uint32_t BSRR;						/*GPIO port bit set/reset register  				Address Offset: 0x18 */
-	volatile uint32_t LCKR;						/*GPIO port configuration lock register  			Address Offset: 0x1C */
-	volatile uint32_t AFR[2];					/*GPIO alternate function registers [0:LOW/1:HIGH]  Address Offset: 0x20/24 */
+	volatile uint32_t MODER;					/*GPIO port mode register  				Address Offset: 0x00 */
+	volatile uint32_t OTYPER;					/*GPIO port output type register  			Address Offset: 0x04 */
+	volatile uint32_t OSPEEDR;					/*GPIO port output speed register  			Address Offset: 0x08 */
+	volatile uint32_t PUPDR;					/*GPIO port pull-up/pull-down register  		Address Offset: 0x0C */
+	volatile uint32_t IDR;						/*GPIO port input data register  			Address Offset: 0x10 */
+	volatile uint32_t ODR;						/*GPIO port output data register 			Address Offset: 0x14 */
+	volatile uint32_t BSRR;						/*GPIO port bit set/reset register  			Address Offset: 0x18 */
+	volatile uint32_t LCKR;						/*GPIO port configuration lock register  		Address Offset: 0x1C */
+	volatile uint32_t AFR[2];					/*GPIO alternate function registers [0:LOW/1:HIGH]  	Address Offset: 0x20/24 */
 }GPIO_RegDef_t;
 
 
@@ -175,13 +175,13 @@ typedef struct{
 
 
 typedef struct{
-	volatile uint32_t CR1;						/*SPI control register 1  			Address Offset: 0x00 */
-	volatile uint32_t CR2;						/*SPI control register 2  			Address Offset: 0x04 */
-	volatile uint32_t SR;						/*SPI status register  				Address Offset: 0x08 */
-	volatile uint32_t DR;						/*SPI data register 				Address Offset: 0x0C */
+	volatile uint32_t CR1;						/*SPI control register 1  		Address Offset: 0x00 */
+	volatile uint32_t CR2;						/*SPI control register 2  		Address Offset: 0x04 */
+	volatile uint32_t SR;						/*SPI status register  			Address Offset: 0x08 */
+	volatile uint32_t DR;						/*SPI data register 			Address Offset: 0x0C */
 	volatile uint32_t CRCPR;					/*SPI CRC polynomial register 		Address Offset: 0x10 */
-	volatile uint32_t RXCRCR;					/*SPI RX CRC register 				Address Offset: 0x14 */
-	volatile uint32_t TXCRCR;					/*SPI TX CRC register				Address Offset: 0x18 */
+	volatile uint32_t RXCRCR;					/*SPI RX CRC register 			Address Offset: 0x14 */
+	volatile uint32_t TXCRCR;					/*SPI TX CRC register			Address Offset: 0x18 */
 	volatile uint32_t I2SCFGR;					/*SPI_I2S configuration register 	Address Offset: 0x1C */
 	volatile uint32_t I2SPR;					/*SPI_I2S pre-scaler register  		Address Offset: 0x20 */
 }SPI_RegDef_t;
@@ -192,36 +192,36 @@ typedef struct{
  */
 
 typedef struct{
-	volatile uint32_t CR;						/*clock control register			  						Offset: 0x00*/
-	volatile uint32_t PLLCFGR;					/*PLL configuration register 								Offset: 0x04*/
-	volatile uint32_t CFGR;						/*clock configuration register  							Offset: 0x08*/
-	volatile uint32_t CIR;						/*clock interrupt register  								Offset: 0x0C*/
-	volatile uint32_t AHB1RSTR;					/*AHB1 peripheral reset register  							Offset: 0x10*/
-	volatile uint32_t AHB2RSTR;					/*AHB2 peripheral reset register  							Offset: 0x14*/
-	volatile uint32_t AHB3RSTR;					/*AHB3 peripheral reset register  							Offset: 0x18*/
+	volatile uint32_t CR;						/*clock control register					Offset: 0x00*/
+	volatile uint32_t PLLCFGR;					/*PLL configuration register 					Offset: 0x04*/
+	volatile uint32_t CFGR;						/*clock configuration register  				Offset: 0x08*/
+	volatile uint32_t CIR;						/*clock interrupt register  					Offset: 0x0C*/
+	volatile uint32_t AHB1RSTR;					/*AHB1 peripheral reset register  				Offset: 0x10*/
+	volatile uint32_t AHB2RSTR;					/*AHB2 peripheral reset register  				Offset: 0x14*/
+	volatile uint32_t AHB3RSTR;					/*AHB3 peripheral reset register  				Offset: 0x18*/
 	uint32_t RESERVED0;
-	volatile uint32_t APB1RSTR;					/*APB1 peripheral reset register  							Offset: 0x20*/
-	volatile uint32_t APB2RSTR;					/*APB2 peripheral reset register  							Offset: 0X24*/
+	volatile uint32_t APB1RSTR;					/*APB1 peripheral reset register  				Offset: 0x20*/
+	volatile uint32_t APB2RSTR;					/*APB2 peripheral reset register  				Offset: 0X24*/
 	uint32_t RESERVED1[2];
-	volatile uint32_t AHB1ENR;					/*AHB1 peripheral clock enable register  					Offset: 0x30*/
-	volatile uint32_t AHB2ENR;					/*AHB2 peripheral clock enable register  					Offset: 0x34*/
-	volatile uint32_t AHB3ENR;					/*AHB3 peripheral clock enable register  					Offset: 0x38*/
+	volatile uint32_t AHB1ENR;					/*AHB1 peripheral clock enable register  			Offset: 0x30*/
+	volatile uint32_t AHB2ENR;					/*AHB2 peripheral clock enable register  			Offset: 0x34*/
+	volatile uint32_t AHB3ENR;					/*AHB3 peripheral clock enable register  			Offset: 0x38*/
 	uint32_t RESERVED2;
-	volatile uint32_t APB1ENR;					/*APB2 peripheral clock enable register  					Offset: 0x40*/
-	volatile uint32_t APB2ENR;					/*APB2 peripheral clock enable register  				  	Offset: 0x44*/
+	volatile uint32_t APB1ENR;					/*APB2 peripheral clock enable register  			Offset: 0x40*/
+	volatile uint32_t APB2ENR;					/*APB2 peripheral clock enable register  			Offset: 0x44*/
 	uint32_t RESERVED3 [2];
-	volatile uint32_t AHB1LPENR;				/*AHB1 peripheral clock enable in low power mode register  	Offset: 0x50*/
-	volatile uint32_t AHB2LPENR;				/*AHB2 peripheral clock enable in low power mode register  	Offset: 0x54*/
-	volatile uint32_t AHB3LPENR;				/*AHB3 peripheral clock enable in low power mode register  	Offset: 0x58*/
+	volatile uint32_t AHB1LPENR;					/*AHB1 peripheral clock enable in low power mode register  	Offset: 0x50*/
+	volatile uint32_t AHB2LPENR;					/*AHB2 peripheral clock enable in low power mode register  	Offset: 0x54*/
+	volatile uint32_t AHB3LPENR;					/*AHB3 peripheral clock enable in low power mode register  	Offset: 0x58*/
 	uint32_t RESERVED4;
-	volatile uint32_t APB1LPENR;				/*APB1 peripheral clock enable in low power mode register  	Offset: 0x60*/
-	volatile uint32_t APB2LPENR;				/*APB2 peripheral clock enabled in low power mode register 	Offset: 0x64*/
+	volatile uint32_t APB1LPENR;					/*APB1 peripheral clock enable in low power mode register  	Offset: 0x60*/
+	volatile uint32_t APB2LPENR;					/*APB2 peripheral clock enabled in low power mode register 	Offset: 0x64*/
 	uint32_t RESERVED5 [2];
-	volatile uint32_t BDCR;						/*RCC Backup domain control register  						Offset: 0x70*/
-	volatile uint32_t CSR;						/*RCC clock control & status register  						Offset: 0x74*/
+	volatile uint32_t BDCR;						/*RCC Backup domain control register  				Offset: 0x70*/
+	volatile uint32_t CSR;						/*RCC clock control & status register  				Offset: 0x74*/
 	uint32_t RESERVED6 [2];
-	volatile uint32_t SSCGR;					/*RCC spread spectrum clock generation register  			Offset: 0x80*/
-	volatile uint32_t PLLI2SCFGR;				/*RCC PLLI2S configuration register 					 	Offset: 0x84*/
+	volatile uint32_t SSCGR;					/*RCC spread spectrum clock generation register  		Offset: 0x80*/
+	volatile uint32_t PLLI2SCFGR;					/*RCC PLLI2S configuration register 				Offset: 0x84*/
 }RCC_RegDef_t;
 
 /*
@@ -229,12 +229,12 @@ typedef struct{
  */
 
 typedef struct{
-	volatile uint32_t IMR;					/*GPIO port mode register  							Address Offset: 0x00 */
-	volatile uint32_t EMR;					/*GPIO port output type register  					Address Offset: 0x04 */
-	volatile uint32_t RTSR;					/*GPIO port output speed register  					Address Offset: 0x08 */
-	volatile uint32_t FTSR;					/*GPIO port pull-up/pull-down register  			Address Offset: 0x0C */
-	volatile uint32_t SWIER;				/*GPIO port input data register  					Address Offset: 0x10 */
-	volatile uint32_t PR;					/*GPIO port output data register 					Address Offset: 0x14 */
+	volatile uint32_t IMR;						/*GPIO port mode register  				Address Offset: 0x00 */
+	volatile uint32_t EMR;						/*GPIO port output type register  			Address Offset: 0x04 */
+	volatile uint32_t RTSR;						/*GPIO port output speed register  			Address Offset: 0x08 */
+	volatile uint32_t FTSR;						/*GPIO port pull-up/pull-down register  		Address Offset: 0x0C */
+	volatile uint32_t SWIER;					/*GPIO port input data register  			Address Offset: 0x10 */
+	volatile uint32_t PR;						/*GPIO port output data register 			Address Offset: 0x14 */
 }EXTI_RegDef_t;
 
 
@@ -243,16 +243,16 @@ typedef struct{
  */
 
 typedef struct{
-	volatile uint32_t MEMRMP;				/*SYSCFG memory re-map register						Address Offset: 0x00 */
+	volatile uint32_t MEMRMP;				/*SYSCFG memory re-map register					Address Offset: 0x00 */
 	volatile uint32_t PMC;					/*peripheral mode configuration register  			Address Offset: 0x04 */
-	volatile uint32_t EXTICR[4];			/*external interrupt configuration register 1[0]  	Address Offset: 0x08 */
-											/*external interrupt configuration register 2  		Address Offset: 0x0C */
-											/*external interrupt configuration register 3  		Address Offset: 0x10 */
-											/*external interrupt configuration register 4[3] 	Address Offset: 0x14 */
+	volatile uint32_t EXTICR[4];				/*external interrupt configuration register 1[0]  		Address Offset: 0x08 */
+								/*external interrupt configuration register 2  			Address Offset: 0x0C */
+								/*external interrupt configuration register 3  			Address Offset: 0x10 */
+								/*external interrupt configuration register 4[3] 		Address Offset: 0x14 */
 	uint32_t RESRVED1[2];
 	volatile uint32_t CMPCR;				/*Compensation cell control register				Address Offset: 0x20 */
 	uint32_t RESERVED2[2];
-	volatile uint32_t CFGR;					/*													Address Offset: 0x2C */
+	volatile uint32_t CFGR;					/*								Address Offset: 0x2C */
 }SYSCFG_RegDef_t;
 
 
@@ -449,8 +449,8 @@ typedef struct{
 #define DISABLE 		0
 #define SET 			ENABLE
 #define RESET			DISABLE
-#define GPIO_PIN_SET	SET
-#define GPIO_PIN_RESET	RESET
+#define GPIO_PIN_SET		SET
+#define GPIO_PIN_RESET		RESET
 #define FLAG_SET		SET
 #define FLAG_RESET		RESET
 /*********************************************
@@ -462,13 +462,13 @@ typedef struct{
 #define SPI_CR1_CPHA		0
 #define SPI_CR1_CPOL		1
 #define SPI_CR1_MSTR		2
-#define SPI_CR1_BR			3
-#define SPI_CR1_SPE			6
+#define SPI_CR1_BR		3
+#define SPI_CR1_SPE		6
 #define SPI_CR1_LSBF		7
-#define SPI_CR1_SSI			8
-#define SPI_CR1_SSM			9
+#define SPI_CR1_SSI		8
+#define SPI_CR1_SSM		9
 #define SPI_CR1_RXONLY		10
-#define SPI_CR1_DFF			11
+#define SPI_CR1_DFF		11
 #define SPI_CR1_CRCNEXT		12
 #define SPI_CR1_CRCEN		13
 #define SPI_CR1_BIDIOE		14
@@ -479,7 +479,7 @@ typedef struct{
 #define SPI_CR2_RXDMAEN		0
 #define SPI_CR2_TXDMAEN		1
 #define SPI_CR2_SSOE		2
-#define SPI_CR2_FRF			4
+#define SPI_CR2_FRF		4
 #define SPI_CR2_ERRIE		5
 #define SPI_CR2_RXNEIE		6
 #define SPI_CR2_TXEIE		7
@@ -487,15 +487,15 @@ typedef struct{
 
 // SPISR
 
-#define SPI_SR_RXNE			0
-#define SPI_SR_TXE			1
+#define SPI_SR_RXNE		0
+#define SPI_SR_TXE		1
 #define SPI_SR_CHSIDE		2
-#define SPI_SR_UDR			3
+#define SPI_SR_UDR		3
 #define SPI_SR_CRCERR		4
-#define SPI_SR_MODF			5
-#define SPI_SR_OVR			6
-#define SPI_SR_BSY			7
-#define SPI_SR_FRE			8
+#define SPI_SR_MODF		5
+#define SPI_SR_OVR		6
+#define SPI_SR_BSY		7
+#define SPI_SR_FRE		8
 
 
 
