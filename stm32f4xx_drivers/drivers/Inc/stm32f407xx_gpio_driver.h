@@ -22,7 +22,7 @@ typedef struct{
 	uint8_t GPIO_PinNumber;			/*!< possible values from @GPIO_PIN_NUMBERS >*/
 	uint8_t GPIO_PinMode;			/*!< possible values from @GPIO_PIN_MODES >*/
 	uint8_t GPIO_PinSpeed;			/*!< possible values from @GPIO_PIN_SPEED_MODES >*/
-	uint8_t GPIO_PinPuPdControl;	/*!< possible values from @GPIO_PULLUP/DOWN_MODES >*/
+	uint8_t GPIO_PinPuPdControl;		/*!< possible values from @GPIO_PULLUP/DOWN_MODES >*/
 	uint8_t GPIO_PinOPType;			/*!< possible values from @GPIO_PIN_OUTPUT_TYPES >*/
 	uint8_t GPIO_PinAltFunMode;
 }GPIO_PinConfig_t;
