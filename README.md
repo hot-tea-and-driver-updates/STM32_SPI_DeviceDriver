@@ -2,13 +2,13 @@
 This repository contains a device driver for the Serial Peripheral Interface (SPI) protocol that is implemented for STM32 microcontrollers. The driver is written in C programming language and is intended to be used with the STM32F4 Discovery board.
 
 ## Table of Contents
-### Installation
-### Dependencies
-### Configuration
-### Building
-### Usage
-### Contributing
-### License
+#### Installation
+#### Dependencies
+#### Configuration
+#### Building
+#### Usage
+#### Contributing
+#### License
 
 ## Installation
 To install the driver, simply clone this repository onto your local machine. The driver source code is located in the src directory.
@@ -16,7 +16,7 @@ To install the driver, simply clone this repository onto your local machine. The
 ## Dependencies
 The driver requires the following dependencies to be installed:
 
-STM32CubeMX
+STM32CubeMX or 
 Keil MDK-ARM
 
 ## Configuration
