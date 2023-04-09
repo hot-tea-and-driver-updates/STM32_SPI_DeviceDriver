@@ -37,8 +37,8 @@
 
 //arduino analog pins
 #define ANALOG_PIN0	0
-#define ANALOG_PIN1 1
-#define ANALOG_PIN2 2
+#define ANALOG_PIN1 	1
+#define ANALOG_PIN2 	2
 #define ANALOG_PIN3	3
 #define ANALOG_PIN4	4
 #define ANALOG_PIN5	5
