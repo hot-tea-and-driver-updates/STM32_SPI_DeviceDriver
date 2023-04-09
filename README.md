@@ -23,7 +23,7 @@ Keil MDK-ARM
 To configure the driver for your specific use case, you will need to modify the spi_driver_config.h file. This file contains configuration settings for the SPI driver, including the SPI clock frequency, the SPI data format, and the SPI slave select pin.
 
 ## Building
-To build the driver, open the STM32_SPI_DeviceDriver.uvprojx project file in Keil MDK-ARM and build the project.
+To build the driver, open the STM32_SPI_DeviceDriver.uvprojx project file in Keil MDK-ARM or STM32CubeMX and build the project.
 
 ## Usage
 To use the driver in your own project, simply include the spi_driver.h header file and call the appropriate functions to initialize and communicate with the SPI peripheral. Example code is provided in the main.c file to demonstrate how to use the driver.
