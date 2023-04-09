@@ -14,17 +14,17 @@
  */
 
 /******************************************************************
- * @fn				-	GPIO_PeriClockControl
+ * @fn			-	GPIO_PeriClockControl
  *
- * @brief			-	This function enables or disables peripheral clock for the given GPIO port.
+ * @brief		-	This function enables or disables peripheral clock for the given GPIO port.
  *
  * @param[in]		-	Base address of the GPIO peripheral via GPIO_RegDef_t pointer.
  * @param[in]		-	ENABLE or DISABLE macros.
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -77,17 +77,17 @@ void GPIO_PeriClockControl(GPIO_RegDef_t *pGPIOx, uint8_t EnorDi){
  */
 
 /******************************************************************
- * @fn				-	GPIO_Init
+ * @fn			-	GPIO_Init
  *
- * @brief			-	This function initializes a particular GPIO port.
+ * @brief		-	This function initializes a particular GPIO port.
  *
  * @param[in]		-	Base address of the GPIO peripheral via GPIO_RegDef_t pointer.
  * @param[in]		-
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -179,17 +179,17 @@ void GPIO_Init(GPIO_Handle_t *pGPIOHandle){
 
 
 /******************************************************************
- * @fn				-	GPIO_Disable
+ * @fn			-	GPIO_Disable
  *
- * @brief			-	This function disables a particular GPIO port.
+ * @brief		-	This function disables a particular GPIO port.
  *
  * @param[in]		-	Base address of the GPIO peripheral via GPIO_RegDef_t pointer.
  * @param[in]		-
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -220,17 +220,17 @@ void GPIO_Disable(GPIO_RegDef_t *pGPIOx){
  */
 
 /******************************************************************
- * @fn				-	GPIO_ReadInputPin
+ * @fn			-	GPIO_ReadInputPin
  *
- * @brief			-	This function reads the value at a particular input pin.
+ * @brief		-	This function reads the value at a particular input pin.
  *
  * @param[in]		-	Base address of the GPIO peripheral.
  * @param[in]		-	Pin number of GPIO port to read from.
  * @param[in]		-
  *
- * @return			-	8 bit value from input pin, 0 or 1.
+ * @return		-	8 bit value from input pin, 0 or 1.
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -241,17 +241,17 @@ uint8_t GPIO_ReadInputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber){
 }
 
 /******************************************************************
- * @fn				-	GPIO_ReadInputPort
+ * @fn			-	GPIO_ReadInputPort
  *
- * @brief			-	This function reads the value at a particular input port.
+ * @brief		-	This function reads the value at a particular input port.
  *
  * @param[in]		-	Base address of the GPIO peripheral.
  * @param[in]		-	GPIO port to read from.
  * @param[in]		-
  *
- * @return			-	16 bit value from input port.
+ * @return		-	16 bit value from input port.
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 uint16_t GPIO_ReadInputPort(GPIO_RegDef_t *pGPIOx){
@@ -261,17 +261,17 @@ uint16_t GPIO_ReadInputPort(GPIO_RegDef_t *pGPIOx){
 }
 
 /******************************************************************
- * @fn				-	GPIO_WriteOutputPin
+ * @fn			-	GPIO_WriteOutputPin
  *
- * @brief			-	This function allows the user to write a value to a particular output pin.
+ * @brief		-	This function allows the user to write a value to a particular output pin.
  *
  * @param[in]		-	Base address of the GPIO peripheral.
  * @param[in]		-	Pin number of GPIO port to write to.
  * @param[in]		-	Value to write, 0 or 1.
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -285,17 +285,17 @@ void GPIO_WriteOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber, uint8_t Value
 }
 
 /******************************************************************
- * @fn				-	GPIO_WriteOutputPort
+ * @fn			-	GPIO_WriteOutputPort
  *
- * @brief			-	This function allows the user to write a value to a particular output port.
+ * @brief		-	This function allows the user to write a value to a particular output port.
  *
  * @param[in]		-	Base address of the GPIO peripheral.
  * @param[in]		-	16 bit value to write.
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	16 bits are used for write value because there exists 16 pins within a port.
+ * @Note		-	16 bits are used for write value because there exists 16 pins within a port.
 
  */
 
@@ -304,17 +304,17 @@ void GPIO_WriteOutputPort(GPIO_RegDef_t *pGPIOx, uint16_t Value){
 }
 
 /******************************************************************
- * @fn				-	GPIO_ToggleOutputPin
+ * @fn			-	GPIO_ToggleOutputPin
  *
- * @brief			-	This function toggles the value of a pin (on/off).
+ * @brief		-	This function toggles the value of a pin (on/off).
  *
  * @param[in]		-	Base address of the GPIO peripheral.
  * @param[in]		-	Pin number of a GPIO port to toggle on or off.
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -328,17 +328,17 @@ void GPIO_ToggleOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber){
 
 
 /******************************************************************
- * @fn				-	GPIO_IRQInterruptConfig
+ * @fn			-	GPIO_IRQInterruptConfig
  *
- * @brief			-	This function configures the IRQ of a particular GPIO pin.
+ * @brief		-	This function configures the IRQ of a particular GPIO pin.
  *
  * @param[in]		- 	IRQ Number of a particular port.
  * @param[in]		-	IRQ Priority level to set interrupt to.
  * @param[in]		-	ENABLE or DISABLE macros.
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 void GPIO_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi){ //used to configure IRQ number of the GPIO Pin
@@ -370,17 +370,17 @@ void GPIO_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi){ //used to confi
 }
 
 /******************************************************************
- * @fn				-	GPIO_IRQPriorityConfig
+ * @fn			-	GPIO_IRQPriorityConfig
  *
- * @brief			-	This function configures the IRQ of a particular GPIO pin.
+ * @brief		-	This function configures the IRQ of a particular GPIO pin.
  *
  * @param[in]		- 	IRQ Number of a particular port.
  * @param[in]		-	IRQ Priority level to set interrupt to.
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -400,18 +400,18 @@ void GPIO_IRQPriorityConfig(uint8_t IRQNumber, uint32_t IRQPriority){
 }
 
 /******************************************************************
- * @fn				-	GPIO_IRQHandling
+ * @fn			-	GPIO_IRQHandling
  *
- * @brief			-	This function handles the IRQ when an interrupt occurs at a given pin.
+ * @brief		-	This function handles the IRQ when an interrupt occurs at a given pin.
  * 						Specifically, it clears a pending interrupt.
  *
  * @param[in]		-	Pin number of a GPIO port.
  * @param[in]		-
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
