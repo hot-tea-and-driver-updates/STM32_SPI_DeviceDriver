@@ -11,7 +11,7 @@ This repository contains a device driver for the Serial Peripheral Interface (SP
 #### License
 
 ## Installation
-To install the driver, simply clone this repository onto your local machine. The driver source code is located in the src directory.
+To install the driver, simply clone this repository onto your local machine. The driver source code is located in the src directory within the drivers file. There is no need to keep the stand alone driver file if you intend to download for use. 
 
 ## Dependencies
 The driver requires the following dependencies to be installed:
