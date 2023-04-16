@@ -20,17 +20,17 @@ static void spi_ovr_interrupt_handle(SPI_Handle_t *pSPIHandle);
 //Enable or disables peripheral clock for a given SPI base address
 
 /******************************************************************
- * @fn				-	SPI_PeriClockControl
+ * @fn			-	SPI_PeriClockControl
  *
- * @brief			-	This function enables or disables peripheral clock for the given GPIO port.
+ * @brief		-	This function enables or disables peripheral clock for the given GPIO port.
  *
  * @param[in]		-	Base address of the GPIO peripheral via GPIO_RegDef_t pointer.
  * @param[in]		-	ENABLE or DISABLE macros.
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 void SPI_PeriClockControl(SPI_RegDef_t *pSPIx, uint8_t EnorDi){
@@ -59,17 +59,17 @@ void SPI_PeriClockControl(SPI_RegDef_t *pSPIx, uint8_t EnorDi){
  */
 
 /******************************************************************
- * @fn				-	SPI_Peripheral Control
+ * @fn			-	SPI_Peripheral Control
  *
- * @brief			-	This function enables or disables peripheral clock for the given GPIO port.
+ * @brief		-	This function enables or disables peripheral clock for the given GPIO port.
  *
  * @param[in]		-	Base address of the GPIO peripheral via GPIO_RegDef_t pointer.
  * @param[in]		-	ENABLE or DISABLE macros.
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -87,17 +87,17 @@ void SPI_PeripheralControl(SPI_RegDef_t *pSPIx, uint8_t EnorDi){
 //User creates a SPI_Handle_t structure and sends a pointer to this function
 
 /******************************************************************
- * @fn				-	SPI_Init
+ * @fn			-	SPI_Init
  *
- * @brief			-	This function enables or disables peripheral clock for the given GPIO port.
+ * @brief		-	This function enables or disables peripheral clock for the given GPIO port.
  *
  * @param[in]		-	Base address of the GPIO peripheral via GPIO_RegDef_t pointer.
  * @param[in]		-	ENABLE or DISABLE macros.
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 void SPI_Init(SPI_Handle_t *pSPIHandle){
@@ -148,17 +148,17 @@ void SPI_Init(SPI_Handle_t *pSPIHandle){
 
 
 /******************************************************************
- * @fn				-	SPI_Disable
+ * @fn			-	SPI_Disable
  *
- * @brief			-	This function enables or disables peripheral clock for the given GPIO port.
+ * @brief		-	This function enables or disables peripheral clock for the given GPIO port.
  *
  * @param[in]		-	Base address of the GPIO peripheral via GPIO_RegDef_t pointer.
  * @param[in]		-	ENABLE or DISABLE macros.
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -178,17 +178,17 @@ void SPI_Disable(SPI_RegDef_t *pSPIx){
 
 
 /******************************************************************
- * @fn				-	SPI_GetFlagStatus
+ * @fn			-	SPI_GetFlagStatus
  *
- * @brief			-	This function checks the value of a bit within the status register
+ * @brief		-	This function checks the value of a bit within the status register
  *
  * @param[in]		-	Base address of the SPI peripheral
  * @param[in]		-	Pointer variable to TxBuffer
  * @param[in]		-	Length of data to transmit
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -201,17 +201,17 @@ uint8_t SPI_GetFlagStatus(SPI_RegDef_t *pSPIx, uint32_t FlagName){
 
 
 /******************************************************************
- * @fn				-	SPI_SSIConfig
+ * @fn			-	SPI_SSIConfig
  *
- * @brief			-	This function checks the value of SSI bit within the status register
+ * @brief		-	This function checks the value of SSI bit within the status register
  *
  * @param[in]		-	Base address of the SPI peripheral
  * @param[in]		-	Pointer variable to TxBuffer
  * @param[in]		-	Length of data to transmit
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -225,17 +225,17 @@ void SPI_SSIConfig(SPI_RegDef_t *pSPIx, uint8_t EnorDi){
 }
 
 /******************************************************************
- * @fn				-	SPI_SSOEConfig
+ * @fn			-	SPI_SSOEConfig
  *
- * @brief			-	This function checks the value of the SSOE bit within the status register
+ * @brief		-	This function checks the value of the SSOE bit within the status register
  *
  * @param[in]		-	Base address of the SPI peripheral
  * @param[in]		-	Pointer variable to TxBuffer
  * @param[in]		-	Length of data to transmit
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -253,17 +253,17 @@ void SPI_SSOEConfig(SPI_RegDef_t *pSPIx, uint8_t EnorDi){
 
 
 /******************************************************************
- * @fn				-	SPI_SendData
+ * @fn			-	SPI_SendData
  *
- * @brief			-	This function also known as the blocking API will wait until all bytes are transmitted
+ * @brief		-	This function also known as the blocking API will wait until all bytes are transmitted
  *
  * @param[in]		-	Base address of the SPI peripheral
  * @param[in]		-	Pointer variable to TxBuffer
  * @param[in]		-	Length of data to transmit in bytes (1, 2, etc)
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -294,17 +294,17 @@ void SPI_SendData(SPI_RegDef_t *pSPIx, uint8_t *pTxBuffer, uint32_t Len){
 }
 
 /******************************************************************
- * @fn				-	SPI_ReceiveData
+ * @fn			-	SPI_ReceiveData
  *
- * @brief			-	This function enables or disables peripheral clock for the given GPIO port.
+ * @brief		-	This function enables or disables peripheral clock for the given GPIO port.
  *
  * @param[in]		-	Base address of the GPIO peripheral via GPIO_RegDef_t pointer.
  * @param[in]		-	ENABLE or DISABLE macros.
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -337,18 +337,18 @@ void SPI_ReceiveData(SPI_RegDef_t *pSPIx, uint8_t *pRxBuffer, uint32_t Len){
  */
 
 /******************************************************************
- * @fn				-	SPI_IRQInterruptConfig
+ * @fn			-	SPI_IRQInterruptConfig
  *
  *
- * @brief			-	This function enables or disables peripheral clock for the given GPIO port.
+ * @brief		-	This function enables or disables peripheral clock for the given GPIO port.
  *
  * @param[in]		-	Base address of the GPIO peripheral via GPIO_RegDef_t pointer.
  * @param[in]		-	ENABLE or DISABLE macros.
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 void SPI_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi){ //used to configure IRQ number of the GPIO Pin
@@ -379,18 +379,18 @@ void SPI_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi){ //used to config
 	}
 }
 /******************************************************************
- * @fn				-	SPI_IRQPriorityConfig
+ * @fn			-	SPI_IRQPriorityConfig
  *
  *
- * @brief			-	This function enables or disables peripheral clock for the given GPIO port.
+ * @brief		-	This function enables or disables peripheral clock for the given GPIO port.
  *
  * @param[in]		-	Base address of the GPIO peripheral via GPIO_RegDef_t pointer.
  * @param[in]		-	ENABLE or DISABLE macros.
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -411,18 +411,18 @@ void SPI_IRQPriorityConfig(uint8_t IRQNumber, uint32_t IRQPriority){
 }
 
 /******************************************************************
- * @fn				-	SPI_IRQHandling
+ * @fn			-	SPI_IRQHandling
  *
  *
- * @brief			-	This function enables or disables peripheral clock for the given GPIO port.
+ * @brief		-	This function enables or disables peripheral clock for the given GPIO port.
  *
  * @param[in]		-	Base address of the GPIO peripheral via GPIO_RegDef_t pointer.
  * @param[in]		-	ENABLE or DISABLE macros.
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -459,18 +459,18 @@ void SPI_IRQHandling(SPI_Handle_t *pHandle){
 
 
 /******************************************************************
- * @fn				-	SPI_SendDataIT
+ * @fn			-	SPI_SendDataIT
  *
  *
- * @brief			-	This function sends data via SPI based on interrupt timing (not blocking)
+ * @brief		-	This function sends data via SPI based on interrupt timing (not blocking)
  *
  * @param[in]		-	Base address of the GPIO peripheral via GPIO_RegDef_t pointer.
  * @param[in]		-	ENABLE or DISABLE macros.
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 
@@ -496,18 +496,18 @@ uint8_t SPI_SendDataIT(SPI_Handle_t *pSPIHandle, uint8_t *pTxBuffer, uint32_t Le
 
 
 /******************************************************************
- * @fn				-	SPI_ReceiveDataIT
+ * @fn			-	SPI_ReceiveDataIT
  *
  *
- * @brief			-	This function receives data via SPI based on interrupt timing (not blocking)
+ * @brief		-	This function receives data via SPI based on interrupt timing (not blocking)
  *
  * @param[in]		-	Base address of the GPIO peripheral via GPIO_RegDef_t pointer.
  * @param[in]		-	ENABLE or DISABLE macros.
  * @param[in]		-
  *
- * @return			-	None
+ * @return		-	None
  *
- * @Note			-	None
+ * @Note		-	None
 
  */
 uint8_t SPI_ReceiveDataIT(SPI_Handle_t *pSPIHandle, uint8_t *pRxBuffer, uint32_t Len){
