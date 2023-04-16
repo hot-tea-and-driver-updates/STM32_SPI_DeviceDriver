@@ -28,12 +28,12 @@ typedef struct{
 typedef struct{
 	SPI_RegDef_t *pSPIx; 		/*< This holds the base address of SPIx(x:0,1,2) peripheral >*/
 	SPI_Config_t SPIConfig;		/*< This holds user set variables that will be used to configure hardware >*/
-	uint8_t *pTxBuffer;			/* <to store app. Tx buffer address >*/
-	uint8_t *pRxBuffer;			/* <to store app. Rx buffer address >*/
-	uint32_t TxLen;				/* <to store Tx length (in bytes) >*/
-	uint32_t RxLen;				/* <to store Rx length (in bytes) >*/
-	uint8_t TxState;			/* <to store Tx state >*/
-	uint8_t RxState;			/* <to store Rx state >*/
+	uint8_t *pTxBuffer;		/* <to store app. Tx buffer address >*/
+	uint8_t *pRxBuffer;		/* <to store app. Rx buffer address >*/
+	uint32_t TxLen;			/* <to store Tx length (in bytes) >*/
+	uint32_t RxLen;			/* <to store Rx length (in bytes) >*/
+	uint8_t TxState;		/* <to store Tx state >*/
+	uint8_t RxState;		/* <to store Rx state >*/
 }SPI_Handle_t;
 
 /*
@@ -48,16 +48,16 @@ typedef struct{
  *@SPI_BusConfig
  */
 
-#define SPI_BUS_CONFIG_FD				1
-#define SPI_BUS_CONFIG_HD				2
+#define SPI_BUS_CONFIG_FD			1
+#define SPI_BUS_CONFIG_HD			2
 #define SPI_BUS_CONFIG_SMP_RXONLY		3
 
 /*
  *@SPI_SclkSpeed
  */
-#define SPI_SCLK_SPEED_DIV2				0
-#define SPI_SCLK_SPEED_DIV4				1
-#define SPI_SCLK_SPEED_DIV8				2
+#define SPI_SCLK_SPEED_DIV2			0
+#define SPI_SCLK_SPEED_DIV4			1
+#define SPI_SCLK_SPEED_DIV8			2
 #define SPI_SCLK_SPEED_DIV16			3
 #define SPI_SCLK_SPEED_DIV32			4
 #define SPI_SCLK_SPEED_DIV64			5
@@ -97,7 +97,7 @@ typedef struct{
  *@SPI_Application_States
  */
 
-#define SPI_READY		0
+#define SPI_READY	0
 #define SPI_BUSY_IN_RX	1
 #define SPI_BUSY_IN_TX	2
 
