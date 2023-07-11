@@ -1,15 +1,6 @@
 # STM32_SPI_DeviceDriver
 This repository contains a device driver for the Serial Peripheral Interface (SPI) protocol that is implemented for STM32 microcontrollers. The driver is written in C programming language and is intended to be used with the STM32F4 Discovery board. Note: This repository also contains the device driver for GPIO pins on the STM32 and is only used in the example programs, the SPI files are not dependent on them.
 
-## Table of Contents
-#### Installation
-#### Dependencies
-#### Configuration
-#### Building
-#### Usage
-#### Contributing
-#### License
-
 ## Installation
 To install the driver, simply clone this repository onto your local machine. The driver source code is located in the src directory within the drivers file. There is no need to keep the stand alone driver file if you intend to download for use. 
 
